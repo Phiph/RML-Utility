@@ -51,7 +51,7 @@ jobs:
  
     # Create the app package by building and packaging the Windows Application Packaging project
     - name: Create the app package
-      run: dotnet publish -r win-x64 -c ${{ matrix.configuration }} /p:PublishSingleFile=true /p:PublishTrimmed=true -p:PublishDir=.\publish
+      run: dotnet publish -r win-x64 -c ${{ matrix.configuration }} /p:PublishSingleFile=true /p:PublishTrimmed=true /p:PublishDir=.\publish
     
     
     # Upload the MSIX package: https://github.com/marketplace/actions/upload-artifact
