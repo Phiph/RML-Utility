@@ -38,6 +38,7 @@ namespace RML.Utility
 
         public void RunTrace(CommandArgs cmdArgs)
         {
+            rmlOutput.Clear();
             var StartInfo = new ProcessStartInfo(Path.Combine(RMLLocation, rmlExe), cmdArgs.ToCommandArgs())
             {
                 RedirectStandardOutput = true,
